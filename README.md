@@ -235,7 +235,7 @@ Once deployed, Render will provide a public URL.
 
 ## 📚 API Usage Guide
 
-### 🔸 Input Format
+### 🔹 Input Format
 
 Send a `POST` request to `/predict` with a JSON body like the following:
 
@@ -257,6 +257,31 @@ Send a `POST` request to `/predict` with a JSON body like the following:
     }
   ]
 }
+```
+
+### 🔸 Output Format
+
+A list of predictions, each including:
+- `probability`: the predicted probability of default
+- `label`: binary classification result (1 = default, 0 = no default)
+
+```json
+[
+  {
+    "probability": 0.31,
+    "label": 0
+  }
+]
+```
 
 ---
 
+## 📈 Project Impact & Benefits
+
+- ✅ Scalable and maintainable end-to-end ML pipeline with clear modular structure
+- ✅ Suitable for real-world financial risk modeling and credit scoring applications
+- ✅ Public cloud API available for demonstration and external integration
+- ✅ CI/CD pipelines automate testing, linting, and deployment — reducing manual effort and human error
+- ✅ Cloud deployment is cost-effective and allows seamless horizontal scaling as traffic grows
+
+---
