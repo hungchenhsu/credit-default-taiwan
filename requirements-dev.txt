@@ -1,1 +1,16 @@
+# requirements-dev.txt
 
+# --- Testing ---
+pytest>=8.0               # Unit testing framework
+httpx>=0.28.0             # Dependency for FastAPI TestClient, used for API testing
+
+# --- Linting & Formatting ---
+flake8>=6.0.0             # Code style checker
+black>=23.9.1             # (Optional) Automatic code formatter
+isort>=5.12.0             # (Optional) import sorting
+
+# --- Type Checking ---
+mypy>=1.9.0               # Static type checker
+
+# --- Coverage (Optional) ---
+pytest-cov>=4.0.0         # Generate test coverage reports
