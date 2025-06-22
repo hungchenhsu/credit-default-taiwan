@@ -114,3 +114,70 @@ credit-default-taiwan/
    - *Optional*: Only for local development and experiment tracking
 
 ---
+
+## 🌐 API Service & Deployment
+
+- **Framework**: FastAPI
+- **Inference**: Loads model directly from `artifacts/model.joblib`
+- **Input Validation**: Handled with Pydantic schema
+- **Security**: API Key authentication supported (customizable)
+
+### 🔌 Main Endpoints
+
+- `GET /`  
+  - Health check endpoint to confirm the service is live.
+
+- `POST /predict`  
+  - Accepts a batch of client records in JSON format.  
+  - Returns prediction results with probability scores and binary labels.
+
+---
+
+## 🖥️ Running Locally
+
+### 1. Install dependencies
+
+```bash
+git clone https://github.com/hungchenhsu/credit-default-taiwan.git
+cd credit-default-taiwan
+python -m venv venv
+source venv/bin/activate  # On Windows use: venv\Scripts\activate
+pip install -r requirements.txt
+```
+
+### 2. Train the model
+
+```bash
+python src/train.py
+# Output: artifacts/model.joblib
+```
+
+### 3. Launch the API server
+
+```bash
+uvicorn api.app:app --host 0.0.0.0 --port 8000
+```
+
+### 4. Example API call
+
+```bash
+curl -X POST http://127.0.0.1:8000/predict \
+  -H "Content-Type: application/json" \
+  -d '{
+        "records": [{
+          "LIMIT_BAL": 200000,
+          "SEX": 2,
+          "EDUCATION": 2,
+          "MARRIAGE": 1,
+          "AGE": 29,
+          "PAY_0": 1,  "PAY_2": 0, "PAY_3": 0,
+          "PAY_4": 0,  "PAY_5": 0, "PAY_6": 0,
+          "BILL_AMT1": 3913, "BILL_AMT2": 3102, "BILL_AMT3": 689,
+          "BILL_AMT4": 0,    "BILL_AMT5": 0,    "BILL_AMT6": 0,
+          "PAY_AMT1": 0, "PAY_AMT2": 1000, "PAY_AMT3": 1000,
+          "PAY_AMT4": 1000, "PAY_AMT5": 0, "PAY_AMT6": 0
+        }]
+      }'
+```
+
+
