@@ -1,6 +1,6 @@
+# .github/workflows/ci.yml
 name: 🧪 CI
 
-# 只要推到 main，就觸發
 on:
   push:
     branches: [ main ]
@@ -9,40 +9,27 @@ on:
   workflow_dispatch:
 
 jobs:
-  test:
+  build-and-test:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
+      - uses: actions/checkout@v3
 
-      - name: Set up Python 3.11
+      - name: Set up Python
         uses: actions/setup-python@v4
         with:
-          python-version: "3.11"
+          python-version: '3.11'
 
-      - name: Install dependencies
+      - name: Install prod dependencies
+        run: pip install --no-cache-dir -r requirements.txt
+
+      - name: Install dev dependencies
+        run: pip install --no-cache-dir -r requirements-dev.txt
+
+      - name: Lint with flake8
         run: |
-          python -m pip install --upgrade pip
-          pip install -r requirements.txt
+          pip install flake8
+          flake8 src api
 
-      - name: Run basic tests
-        run: |
-          # 先建立 tests 目錄，避免後面無資料夾而寫入失敗
-          mkdir -p tests
-
-          # 寫入簡單的測試檔案
-          cat << 'EOF' > tests/test_app.py
-          from fastapi.testclient import TestClient
-          from api.app import app
-
-          client = TestClient(app)
-
-          def test_root():
-              res = client.get("/")
-              assert res.status_code == 200
-              assert "live" in res.json()["msg"]
-          EOF
-
-          # 執行 pytest
-          pytest --maxfail=1 --disable-warnings -q
+      - name: Run pytest
+        run: pytest --maxfail=1 --disable-warnings -q
