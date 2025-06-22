@@ -81,3 +81,36 @@ credit-default-taiwan/
 ├── .flake8                     # flake8 configuration
 ├── README.md                   # (this file)
 └── LICENSE                     # License info
+```
+
+---
+
+## 📑 Dataset
+
+- **Source:** [UCI Credit Card Default Dataset](https://archive.ics.uci.edu/ml/datasets/default+of+credit+card+clients)
+- **Samples:** 30,000 entries
+- **Features:** 23 columns (including demographics, balance, billing, and payment records)
+- **Goal:** Predict whether a client will default on payment next month
+
+---
+
+## 🚀 Model Training Pipeline
+
+1. **Data Cleaning & Preparation** (`src/data_prep.py`)
+   - Handling missing values
+   - Categorical encoding
+   - Outlier and extreme value treatment
+
+2. **Feature Engineering** (`src/feature_eng.py`)
+   - Generating derived features
+   - Standardization, binning, and other transformations
+
+3. **Model Training** (`src/model_utils.py`, `src/train.py`)
+   - LightGBM with EasyEnsemble for imbalanced classification
+   - Evaluation using accuracy, AUC, recall, and other metrics
+   - Exporting the final pipeline to `artifacts/model.joblib`
+
+4. **MLflow Experiment Tracking**
+   - *Optional*: Only for local development and experiment tracking
+
+---
