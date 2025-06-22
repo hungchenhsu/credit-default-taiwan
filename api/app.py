@@ -1,20 +1,16 @@
 # api/app.py
 import os
-import mlflow
-import mlflow.pyfunc
+import joblib
 import pandas as pd
 from fastapi import FastAPI, HTTPException
 from .schema import CreditBatch, PredictionOut
 
-# --------------------------- MLflow 設定 ---------------------------
-# 1. Docker 內預設用 host.docker.internal:5001 連本機 MLflow
-mlflow.set_tracking_uri(os.getenv("MLFLOW_TRACKING_URI", "http://host.docker.internal:6060"))
-
-MODEL_URI = "models:/credit_default_model@production"
+# 直接用 joblib load 我們打包進 container 的 pipeline
+PIPELINE_PATH = os.getenv("PIPELINE_PATH", "artifacts/model.joblib")
 try:
-    model = mlflow.pyfunc.load_model(MODEL_URI)
+    model = joblib.load(PIPELINE_PATH)
 except Exception as e:
-    raise RuntimeError(f"❌ 無法載入 Production 模型 {MODEL_URI}\n{e}")
+    raise RuntimeError(f"❌ 無法載入模型 {PIPELINE_PATH}\n{e}")
 
 THRESHOLD = 0.40
 
@@ -30,12 +26,9 @@ def root():
 
 @app.post("/predict", response_model=list[PredictionOut])
 def predict(batch: CreditBatch):
-    """
-    以陣列形式返回每筆 probability 及 label。
-    """
     try:
         df = pd.DataFrame([r.dict() for r in batch.records])
-        proba = model.predict(df)
+        proba = model.predict_proba(df)[:, 1]   # pipeline.predict_proba 回傳 Nx2
         preds = (proba >= THRESHOLD).astype(int)
         return [
             PredictionOut(probability=float(p), label=int(lbl))
