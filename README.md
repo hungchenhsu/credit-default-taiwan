@@ -278,10 +278,10 @@ A list of predictions, each including:
 
 ## 📈 Project Impact & Benefits
 
-- ✅ Scalable and maintainable end-to-end ML pipeline with clear modular structure
-- ✅ Suitable for real-world financial risk modeling and credit scoring applications
-- ✅ Public cloud API available for demonstration and external integration
-- ✅ CI/CD pipelines automate testing, linting, and deployment — reducing manual effort and human error
-- ✅ Cloud deployment is cost-effective and allows seamless horizontal scaling as traffic grows
+- Scalable and maintainable end-to-end ML pipeline with clear modular structure
+- Suitable for real-world financial risk modeling and credit scoring applications
+- Public cloud API available for demonstration and external integration
+- CI/CD pipelines automate testing, linting, and deployment — reducing manual effort and human error
+- Cloud deployment is cost-effective and allows seamless horizontal scaling as traffic grows
 
 ---
