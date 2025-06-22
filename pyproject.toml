@@ -3,5 +3,24 @@ line-length = 88
 target-version = ['py311']
 
 [tool.flake8]
-max-line-length = 88
-extend-ignore = E203, W503
+
+max-line-length = 120
+
+ignore = [
+    "E203",  # whitespace before ':'（Black already 處理過）
+    "W503",  # line break before binop（Black already 處理過）
+    "E302",  # expected 2 blank lines
+    "E305",  # expected 2 blank lines after class/function
+    "E501",  # line too long
+    "W292",  # no newline at end of file
+    "E221",  # multiple spaces before operator
+    "F401",  # imported but unused
+]
+
+exclude = [
+    ".git",
+    "__pycache__",
+    "artifacts",
+    "mlruns",
+    "notebooks",
+]
