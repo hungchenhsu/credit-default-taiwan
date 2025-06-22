@@ -1,0 +1,48 @@
+artifact_path: file:///Users/alstonhsu/Desktop/Default_Credit_Card_Taiwan/_final/credit-default-taiwan/mlruns/281558324254127891/models/m-8399619b349e45b1aa977720deec15b5/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.11.8
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.6.1
+is_signature_from_type_hint: false
+mlflow_version: 3.1.0
+model_id: m-8399619b349e45b1aa977720deec15b5
+model_size_bytes: 1585689
+model_uuid: m-8399619b349e45b1aa977720deec15b5
+prompts: null
+run_id: 3ea643a1cf8c46b4a5274b8b4589ebb7
+saved_input_example_info:
+  artifact_path: input_example.json
+  pandas_orient: split
+  serving_input_path: serving_input_example.json
+  type: dataframe
+signature:
+  inputs: '[{"type": "long", "name": "LIMIT_BAL", "required": true}, {"type": "long",
+    "name": "SEX", "required": true}, {"type": "long", "name": "EDUCATION", "required":
+    true}, {"type": "long", "name": "MARRIAGE", "required": true}, {"type": "long",
+    "name": "AGE", "required": true}, {"type": "long", "name": "PAY_0", "required":
+    true}, {"type": "long", "name": "PAY_2", "required": true}, {"type": "long", "name":
+    "PAY_3", "required": true}, {"type": "long", "name": "PAY_4", "required": true},
+    {"type": "long", "name": "PAY_5", "required": true}, {"type": "long", "name":
+    "PAY_6", "required": true}, {"type": "long", "name": "BILL_AMT1", "required":
+    true}, {"type": "long", "name": "BILL_AMT2", "required": true}, {"type": "long",
+    "name": "BILL_AMT3", "required": true}, {"type": "long", "name": "BILL_AMT4",
+    "required": true}, {"type": "long", "name": "BILL_AMT5", "required": true}, {"type":
+    "long", "name": "BILL_AMT6", "required": true}, {"type": "long", "name": "PAY_AMT1",
+    "required": true}, {"type": "long", "name": "PAY_AMT2", "required": true}, {"type":
+    "long", "name": "PAY_AMT3", "required": true}, {"type": "long", "name": "PAY_AMT4",
+    "required": true}, {"type": "long", "name": "PAY_AMT5", "required": true}, {"type":
+    "long", "name": "PAY_AMT6", "required": true}]'
+  outputs: '[{"type": "tensor", "tensor-spec": {"dtype": "int64", "shape": [-1]}}]'
+  params: null
+type_hint_from_example: false
+utc_time_created: '2025-06-22 00:47:01.218390'

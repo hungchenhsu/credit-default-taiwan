@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/alstonhsu/Desktop/Default_Credit_Card_Taiwan/_final/credit-default-taiwan/mlruns/281558324254127891/3ea643a1cf8c46b4a5274b8b4589ebb7/artifacts
+end_time: 1750553223371
+entry_point_name: ''
+experiment_id: '281558324254127891'
+lifecycle_stage: active
+run_id: 3ea643a1cf8c46b4a5274b8b4589ebb7
+run_name: lgb_bin_final
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1750553217359
+status: 3
+tags: []
+user_id: alstonhsu

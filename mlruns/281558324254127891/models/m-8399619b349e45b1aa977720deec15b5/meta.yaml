@@ -1,0 +1,10 @@
+artifact_location: file:///Users/alstonhsu/Desktop/Default_Credit_Card_Taiwan/_final/credit-default-taiwan/mlruns/281558324254127891/models/m-8399619b349e45b1aa977720deec15b5/artifacts
+creation_timestamp: 1750553221215
+experiment_id: '281558324254127891'
+last_updated_timestamp: 1750553223358
+model_id: m-8399619b349e45b1aa977720deec15b5
+model_type: null
+name: model
+source_run_id: 3ea643a1cf8c46b4a5274b8b4589ebb7
+status: 2
+status_message: null

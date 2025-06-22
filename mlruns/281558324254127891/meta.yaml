@@ -1,0 +1,6 @@
+artifact_location: file:///Users/alstonhsu/Desktop/Default_Credit_Card_Taiwan/_final/credit-default-taiwan/mlruns/281558324254127891
+creation_time: 1750552471267
+experiment_id: '281558324254127891'
+last_update_time: 1750552471267
+lifecycle_stage: active
+name: credit-risk-lgbm
