@@ -180,4 +180,56 @@ curl -X POST http://127.0.0.1:8000/predict \
       }'
 ```
 
+---
+
+## ☁️ Deploying on Render (Cloud)
+
+### 1. Sign up and log in to Render
+Visit [https://render.com](https://render.com) and sign up for an account if you don't already have one.
+
+### 2. Create a New Web Service
+- Choose **"From a Git repository"**
+- Connect your **GitHub** account and select this repository
+- Configure the service:
+  - **Build Command**:  
+    ```bash
+    pip install -r requirements.txt
+    ```
+  - **Start Command**:  
+    ```bash
+    uvicorn api.app:app --host 0.0.0.0 --port 8000
+    ```
+  - **Environment Variables**:  
+    Add necessary environment variables like:
+    ```
+    API_KEY = your-secure-api-key
+    ```
+
+- **Render Free Plan**:  
+  - 750 hours per month included for web services.
+
+### 3. After Deployment
+Once deployed, Render will provide a public URL.
+
+---
+
+## 🧪 Testing & CI/CD
+
+- **`pytest`** for unit testing  
+  All tests are located in [`test/test_app.py`](test/test_app.py) to ensure API functionality and code stability.
+
+- **`flake8` / `black`** for linting and code formatting  
+  Ensures code follows consistent style and best practices.
+
+- **GitHub Actions**  
+  Automatically triggered on every `push` or `pull request`. It performs:
+  - Dependency installation
+  - Linting and style checks
+  - Running unit tests (`pytest`)
+  - Optional deployment to Render (if configured)
+
+- **Development dependencies**  
+  All dev tools are listed in [`requirements-dev.txt`](requirements-dev.txt) and include:
+
+---
 
