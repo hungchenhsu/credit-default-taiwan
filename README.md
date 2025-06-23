@@ -6,7 +6,7 @@
 
 - [Project Overview](#-project-overview)
 - [Features](#-features)
-- [Tech Stack & Tools](#-tech-stack--tools)
+- [Tech Stack & Tools](#%EF%B8%8F-tech-stack--tools)
 - [Repository Structure](#-repository-structure)
 - [Dataset](#-dataset)
 - [Model Training Pipeline](#-model-training-pipeline)
