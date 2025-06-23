@@ -26,6 +26,8 @@
 This project delivers a **machine learning solution for predicting credit card default risk**, covering all stages from data processing, feature engineering, model training to scalable API deployment.  
 The final product is a **FastAPI RESTful web service**, which supports real-time inference via a public cloud endpoint, containerized via Docker, and auto-deployed on Render.
 
+> 🔐 **Note:** A live version of this credit default prediction API is deployed on Render and ready for use. However, to prevent misuse and to better control access, the API endpoint is not publicly listed. If you are interested in testing or integrating with the model, feel free to contact me directly to request the API URL and access key.
+
 ---
 
 ## 🌟 Features
