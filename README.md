@@ -5,19 +5,19 @@
 ## 📋 Table of Contents
 
 - [Project Overview](#-project-overview)
-- [Features](#features)
-- [Tech Stack & Tools](#tech-stack--tools)
-- [Repository Structure](#repository-structure)
-- [Dataset](#dataset)
-- [Model Training Pipeline](#model-training-pipeline)
-- [API Service & Deployment](#api-service--deployment)
-- [Running Locally](#running-locally)
-- [Deploying on Render (Cloud)](#deploying-on-render-cloud)
-- [Testing & CI/CD](#testing--cicd)
-- [API Usage Guide](#api-usage-guide)
-- [Project Impact & Benefits](#project-impact--benefits)
-- [License](#license)
-- [Contact](#contact)
+- [Features](#-features)
+- [Tech Stack & Tools](#-tech-stack--tools)
+- [Repository Structure](#-repository-structure)
+- [Dataset](#-dataset)
+- [Model Training Pipeline](#-model-training-pipeline)
+- [API Service & Deployment](#-api-service--deployment)
+- [Running Locally](#-running-locally)
+- [Deploying on Render (Cloud)](#-deploying-on-render-cloud)
+- [Testing & CI/CD](#-testing--cicd)
+- [API Usage Guide](#-api-usage-guide)
+- [Project Impact & Benefits](#-project-impact--benefits)
+- [License](#-license)
+- [Contact](#-contact)
 
 ---
 
