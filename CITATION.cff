@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+title: "Credit Default Predictor API: An End-to-End Machine Learning Pipeline for Credit Risk Assessment"
+authors:
+  - family-names: Hsu
+    given-names: Hung-Chen
+    orcid: https://orcid.org/0009-0007-9806-2443
+date-released: 2025-06-22
+version: "1.0"
+url: https://github.com/hungchenhsu/credit-default-taiwan
+repository-code: https://github.com/hungchenhsu/credit-default-taiwan
+license: MIT
+type: software
+keywords:
+  - credit default
+  - machine learning
+  - imbalanced classification
+  - LightGBM
+  - FastAPI
+  - financial risk
+abstract: >
+  This project delivers a complete, modular machine learning system for predicting 
+  credit card payment defaults, built on LightGBM with EasyEnsemble to address data imbalance. 
+  The pipeline spans data preparation, feature engineering, model training, and inference, 
+  and is deployed as a public-facing REST API using FastAPI. Model input follows a structured 
+  schema reflecting UCI credit card dataset fields. The repository includes automated CI/CD 
+  with GitHub Actions and cloud deployment via Render.
