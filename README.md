@@ -285,3 +285,16 @@ A list of predictions, each including:
 - Cloud deployment is cost-effective and allows seamless horizontal scaling as traffic grows
 
 ---
+
+## 🤝 Citation
+
+If you find this repository helpful in your research, coursework, or applied projects, please consider citing or linking back to the repository:
+
+Hung-Chen Hsu. *Credit Default Predictor API: An End-to-End Machine Learning Pipeline for Credit Risk Assessment*. GitHub, 2025.  
+Repository: [https://github.com/hungchenhsu/credit-default-taiwan](https://github.com/hungchenhsu/credit-default-taiwan)
+
+This helps acknowledge the original work and encourages open sharing in the machine learning and financial analytics community 🙌
+
+---
+
+Created with 💻 and 🎯 by Hung-Chen Hsu
