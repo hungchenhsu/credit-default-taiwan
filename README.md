@@ -17,7 +17,7 @@
 - [API Usage Guide](#-api-usage-guide)
 - [Project Impact & Benefits](#-project-impact--benefits)
 - [License](#-license)
-- [Contact](#-contact)
+- [Citation](#-citation)
 
 ---
 
@@ -285,6 +285,10 @@ A list of predictions, each including:
 - Cloud deployment is cost-effective and allows seamless horizontal scaling as traffic grows
 
 ---
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## 🤝 Citation
 
