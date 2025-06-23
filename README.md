@@ -12,7 +12,7 @@
 - [Model Training Pipeline](#-model-training-pipeline)
 - [API Service & Deployment](#-api-service--deployment)
 - [Running Locally](#%EF%B8%8F-running-locally)
-- [Deploying on Render (Cloud)](#-deploying-on-render-cloud)
+- [Deploying on Render (Cloud)](#EF%B8%8F-deploying-on-render-cloud)
 - [Testing & CI/CD](#-testing--cicd)
 - [API Usage Guide](#-api-usage-guide)
 - [Project Impact & Benefits](#-project-impact--benefits)
