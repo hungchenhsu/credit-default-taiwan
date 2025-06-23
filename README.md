@@ -4,7 +4,7 @@
 
 ## 📋 Table of Contents
 
-- [Project Overview](#project-overview)
+- [Project Overview](#-project-overview)
 - [Features](#features)
 - [Tech Stack & Tools](#tech-stack--tools)
 - [Repository Structure](#repository-structure)
