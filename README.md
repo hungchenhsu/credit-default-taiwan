@@ -305,9 +305,13 @@ A list of predictions, each including:
 ![Confusion Matrix](artifacts/plots/confusionMatrix.png) 
 ![ROC Curve](artifacts/plots/roc-auc.png)
 
-## 🖼️ SHAP Interpretation
+## 🖼️ SHAP Model Interpretation
 
 ![SHAP](artifacts/plots/shap.png)
+
+- **Pay_0** (Repayment status): Red dots far right, blue dots far left → delays (high values) sharply raise default risk; on-time (-1) lowers it. Most recent delinquency is the strongest warning sign.
+- **LIMIT_BAL** (Amount of given credit in NT dollars): Higher limits (red) push SHAP left (lower risk); low limits (blue) lean right. Low-limit customers default more often; high-limit holders are usually lower risk / higher income.
+- **PAY_2, PAY_3** (Repayment status in July and August): Same pattern as PAY_0 but weaker; earlier delinquencies still matter. Consistent decay of predictive power as we look further back in time.
 
 ---
 
