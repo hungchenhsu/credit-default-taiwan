@@ -294,8 +294,8 @@ A list of predictions, each including:
 | Metric | Value | Interpretation |
 |--------|-------|----------------|
 | **ROC-AUC** | **0.769** | Overall discrimination power. In line with 0.77 – 0.78 benchmark for this public dataset. |
-| **Recall (Default = 1)** | **0.742** | Captures **74 %** of actual defaults which meets the business goal of high sensitivity. |
-| **Precision (Default = 1)** | **0.365** | Acceptable for a 22 % positive class after shifting threshold to favor recall. |
+| **Recall (Default = 1)** | **0.742** | Captures **74%** of actual defaults which meets the business goal of high sensitivity. |
+| **Precision (Default = 1)** | **0.365** | Acceptable for a 22% positive class after shifting threshold to favor recall. |
 | **F1 (Default)** | **0.489** | Balanced view of P & R given the chosen threshold **0.40**. |
 | **Accuracy** | **0.657** | Lower by design (recall-oriented model). |
 
