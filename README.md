@@ -16,6 +16,7 @@
 - [Testing & CI/CD](#-testing--cicd)
 - [API Usage Guide](#-api-usage-guide)
 - [Project Impact & Benefits](#-project-impact--benefits)
+- [Final Model Evaluation](#-final-model-evaluation)
 - [License](#-license)
 - [Citation](#-citation)
 
