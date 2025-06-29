@@ -288,7 +288,7 @@ A list of predictions, each including:
 
 ---
 
-## 📊 Final Model Evaluation
+## 🌟 Final Model Evaluation
 
 | Metric | Value | Interpretation |
 |--------|-------|----------------|
