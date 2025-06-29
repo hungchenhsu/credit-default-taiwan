@@ -302,6 +302,9 @@ A list of predictions, each including:
 - **Recall-first strategy** avoids missing high-risk customers; false positives can be filtered downstream. **Source:** [Paper](https://lup.lub.lu.se/luur/download?func=downloadFile&recordOId=9006336&fileOId=9006344#:~:text=relationship%20be%02tween%20precision%20and%20recall,customer%20in%20terms%20of%20lost)
 - **AUC ≥ 0.75** matches peer-reviewed benchmarks on the UCI dataset. **Source:** [Paper](https://www.mdpi.com/1911-8074/18/1/23#:~:text=area%20under%20the%20ROC%20curve,for%20RF)
 
+![Confusion Matrix](artifacts/plots/confusionMatrix.png) 
+![ROC Curve](artifacts/plots/roc-auc.png)
+
 ---
 
 ## 📄 License
