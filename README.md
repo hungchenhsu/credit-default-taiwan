@@ -299,7 +299,7 @@ A list of predictions, each including:
 | **Accuracy** | **0.657** | Lower by design (recall-oriented model). |
 
 - **Recall-first strategy** avoids missing high-risk customers; false positives can be filtered downstream.  
-- **AUC ≥ 0.75** matches peer-reviewed benchmarks on the UCI dataset.  
+- **AUC ≥ 0.75** matches peer-reviewed benchmarks on the UCI dataset. **Source:** [Paper](https://www.mdpi.com/1911-8074/18/1/23#:~:text=area%20under%20the%20ROC%20curve,for%20RF)
 
 ---
 
