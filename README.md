@@ -305,6 +305,10 @@ A list of predictions, each including:
 ![Confusion Matrix](artifacts/plots/confusionMatrix.png) 
 ![ROC Curve](artifacts/plots/roc-auc.png)
 
+## 🖼️ SHAP Interpretation
+
+![SHAP](artifacts/plots/shap.png)
+
 ---
 
 ## 📄 License
