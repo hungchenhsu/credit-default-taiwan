@@ -309,7 +309,7 @@ A list of predictions, each including:
 
 ![SHAP](artifacts/plots/shap.png)
 
-- `PAY_0` **(Repayment status):** Red dots far right, blue dots far left → delays (high values) sharply raise default risk; on-time (-1) lowers it. Most recent delinquency is the strongest warning sign.
+- `PAY_0` **(Repayment status; -1=pay duly, 9=payment delay for nine months and above):** Red dots far right, blue dots far left → delays (high values) sharply raise default risk; on-time (-1) lowers it. Most recent delinquency is the strongest warning sign.
 - `LIMIT_BAL` **(Amount of given credit in NT dollars):** Higher limits (red) push SHAP left (lower risk); low limits (blue) lean right. Low-limit customers default more often; high-limit holders are usually lower risk / higher income.
 - `PAY_2, PAY_3` **(Repayment status in July and August):** Same pattern as PAY_0 but weaker; earlier delinquencies still matter. Consistent decay of predictive power as we look further back in time.
 
