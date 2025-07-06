@@ -326,7 +326,7 @@ If you find this repository helpful in your research, coursework, or applied pro
 Hung-Chen Hsu. *Credit Default Predictor API: An End-to-End Machine Learning Pipeline for Credit Risk Assessment*. GitHub, 2025.  
 Repository: [https://github.com/hungchenhsu/credit-default-taiwan](https://github.com/hungchenhsu/credit-default-taiwan)
 
-This helps acknowledge the original work and encourages open sharing in the machine learning and financial analytics community 🙌
+This helps acknowledge the original work and encourages open sharing in the machine learning and FinTech community 🙌
 
 ---
 
